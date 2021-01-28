@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+div{
+    display: block;
+}
+
+nav{   
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.navBar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 106px auto;
+    grid-template-rows: 48px;
+    box-shadow: 0 0 32px rgba(0,0,0,.15);
+}
+
+.logo{
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImg{
+    width: 66px;
+    height: 16px;
+
+}
+
+.brgerContainer{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.brgerContainer li{
+    height: 100%;
+    width: 48px;
+}
+
+.brgerContainer li{
+    border-left: 1px solid #eee;
+}
+
+.search{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+}
+
+.icon{
+    display: block;
+    background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') no-repeat;
+    background-size: 1296px 1296px;
+    width: 16px;
+    height: 16px;
+    opacity: .25;
+}
+
+.icon-search{
+    background-position: -848px -848px;
+}
+
+.mobileHamburger{
+    display: flex;
+    padding: 16px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.mobileHamburger span{
+    background-color: tomato;
+    display: block;
+    height: 2px;    
+    width: 100%; 
+}
+
+#eventLink{
+    font-size: 13px;
+    line-height: 60px;  
+    background-color: #ffdd33;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0 0 32px rgb(0 0 0 / 15%);
+    
+ }
+
+ .main{
+     width: 100%;
+     padding-top: 72px;
+     position: relative;
+     display: block;
+ }
+
+ .itemGrid{
+     padding: 4px;
+     position: relative;
+     display: grid;
+     grid-template-columns: 100%;
+ }
+
+ article{
+     display: block;
+ }
+
+ .mainStory{
+     height: 30vh;
+     display: grid;
+     grid-template-columns: 100%;
+     grid-template-rows: 100%;
+     padding: 4px 0px;
+ }
+
+ .mainStoryItem{
+     background-image: url('./images/Untitled-design-2021-01-28T130539.webp');
+     height: 100%;
+     z-index: 1;
+     background-size: cover;
+     grid-area:1/1/2/2;
+ }
+
+ .mainStoryGradient{
+    background: rgba(0,0,0,.25);
+    background-size: 100% 100%;
+    display: block;
+    height: 100%;
+    grid-area:1/1/2/2;
+    z-index: 2;
+ }
+
+ .coverHeader{
+     z-index: 3;
+     color: white;
+     grid-area: 1/1/2/2;
+     position: absolute;
+     bottom: 4px;
+     left: 4px;
+     padding: 14px 12px;
+ }
+
+ .coverTitle{
+     font-family: Avalon,sans-serif;
+     margin-bottom: .25em;
+     font-weight: 700;
+     line-height: 1.1;
+ }
+
+ .coverTitle a{
+     color: white;
+ }
