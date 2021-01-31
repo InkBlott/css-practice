@@ -1,5 +1,5 @@
 # css-practice
 
-Practice re-creating a page with media querries.
+ Re-created page of https://www.thenextweb.com for CSS practice with media querries.
 
 https://inkblott.github.io/css-practice/Index.html
